@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | София Бондарь</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">SB</div>
+            <nav class="desktop-nav">
+                <a href="#main" class="nav-link">Главная</a>
+                <a href="#about" class="nav-link">Обо мне</a>
+                <a href="#achievements" class="nav-link">Достижения</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+            <div class="mobile-menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">SB</div>
+            <div class="mobile-close-btn" onclick="toggleMenu()">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <nav class="mobile-nav">
+            <a href="#main" class="mobile-nav-link" onclick="toggleMenu()">Главная</a>
+            <a href="#about" class="mobile-nav-link" onclick="toggleMenu()">Обо мне</a>
+            <a href="#achievements" class="mobile-nav-link" onclick="toggleMenu()">Достижения</a>
+            <a href="#contact" class="mobile-nav-link" onclick="toggleMenu()">Контакты</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="main" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">София Бондарь</h1>
+                        <p class="hero-subtitle">Ученица IT-класса · Будущий физик · Путешественница</p>
+                        <p class="hero-description">
+                            Привет! Я учусь в IT-классе (городской проект), увлекаюсь программированием, физикой и исследованиями мира вокруг. 
+                            В будущем планирую поступать на физический факультет МГУ и работать техническим специалистом в промышленной сфере.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Физика</span>
+                            <span class="tag">Путешествия</span>
+                            <span class="tag">Спорт</span>
+                        </div>
+                        <a href="#contact" class="btn-primary">Связаться со мной</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://i.ytimg.com/vi/Rmgum6iCtr8/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gNygqMA8=&rs=AOn4CLDJlbtQT6S0SA7JHBCQrm0QLJGKLg" alt="София Бондарь">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=34f1a11a498d8fb406618df5270d675d_l-4835773-images-thumbs&n=13" alt="София за работой">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Меня зовут София, и я живу на пересечении точных наук и творчества. 
+                            Днем я погружаюсь в мир программирования и физических формул, а вечером могу создавать украшения ручной работы или экспериментировать на кухне с новыми рецептами.
+                        </p>
+                        <p>
+                            Моя спортивная история началась с профессионального плавания, которое научило меня дисциплине и целеустремленности. 
+                            Сейчас поддерживаю форму в фитнес-зале — это помогает сохранять баланс между умственной работой и физической активностью.
+                        </p>
+                        <p>
+                            Путешествия — моя страсть. Я уже побывала в разных уголках России: от Карелии до Дагестана, от Крыма до Красноярска. 
+                            Была в Турции, Азербайджане и Украине. В будущем мечтаю посетить как можно больше стран, чтобы познакомиться с разными культурами и людьми.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>10.3 IT-класс (городской проект)</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Москва, Россия</span>
+                            </div>
+                            <div class="detail">
+                                <i class="fas fa-heart"></i>
+                                <span>Рукоделие, кулинария, спорт</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements">
+            <div class="container">
+                <h2 class="section-title">Мои достижения и планы</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>Образование</h3>
+                        <p>Успешно окончила 9 классов с отличными результатами. Сейчас учусь в 10 IT-классе, активно готовлюсь к ЕГЭ по профильным предметам. Цель — поступление на физический факультет МГУ.</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>IT-Навыки</h3>
+                        <p>Осваиваю веб-разработку, изучаю HTML/CSS, JavaScript. Участвую в школьных IT-проектах, создаю первые веб-приложения. Планирую углубиться в backend-разработку и data science.</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-swimming-pool"></i>
+                        </div>
+                        <h3>Спортивные достижения</h3>
+                        <p>Более 7 лет профессионально занималась плаванием, участвовала в соревнованиях. Сейчас поддерживаю форму в фитнес-зале, уделяю внимание силовым тренировкам и кардио.</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h3>Путешествия</h3>
+                        <p>Посетила более 15 регионов России и 3 зарубежные страны. Веду travel-блог, собираю коллекцию сувениров из разных мест. В планах — Европа, Азия и Северная Америка.</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Профессиональные планы</h3>
+                        <p>Хочу стать техническим специалистом в промышленной сфере, участвовать в крупных проектах и внедрять инновации. Мечтаю работать на стыке физики и IT-технологий.</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Личностный рост</h3>
+                        <p>Развиваю soft skills: коммуникабельность, тайм-менеджмент, лидерские качества. Участвую в волонтерских проектах и научных конференциях. Стремлюсь к постоянному саморазвитию.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь со мной</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email</h3>
+                            <p>bondatsm2009@gmail.com</p>
+                            <a href="mailto:bondatsm2009@gmail.com" class="contact-link">Написать</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3>Телефон</h3>
+                            <p>+7 (925) 923-05-28</p>
+                            <a href="tel:+79259230528" class="contact-link">Позвонить</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Локация</h3>
+                            <p>Москва, Россия</p>
+                            <a href="https://maps.google.com" class="contact-link" target="_blank">Посмотреть на карте</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Отправить сообщение</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Ваш email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" placeholder="Тема сообщения">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="ВАШ_SITE_KEY"></div>
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                <span id="submitText">Отправить сообщение</span>
+                                <div id="loadingSpinner" class="spinner" style="display: none;"></div>
+                            </button>
+                            <div id="formMessage" style="display: none; margin-top: 15px; padding: 10px; border-radius: 5px;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">София Бондарь</div>
+                <p class="footer-text">Ученица IT-класса · Будущий студент физфака МГУ · Путешественница</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+                <p class="copyright">© 2024 София Бондарь. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
